@@ -1,0 +1,19 @@
+GET http://localhost:5050/authors
+
+#####
+GET http://localhost:5050/authors/byName?authorName=Matteo
+
+#####
+POST http://localhost:5050/authors HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Marco",
+    "surname": "Colia",
+    "email": "matteo@gmail.com",
+    "dob": "16/12/1985",
+    "avatar": "https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"
+}
+
+#####
+GET http://localhost:5050/authors/64b04d62fa5f1ec32a47d2fc/posts
